@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Change to "Module #: Name | Research Paper Toolbox" -->
+  <title>Module Template | Research Paper Toolbox</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!--
+    HOW TO ADD A NEW MODULE
+    1. Save a copy of this file in the modules folder, named after the module
+       in lowercase (for example modules/references.html).
+    2. Replace the example content below with the module's copy.
+    3. Put the module's images in the images folder.
+    4. On every page, change that module's nav link from module-template.html
+       to the new file, and remove "(coming soon)" on index.html.
+  -->
+
+  <!-- TOP NAVIGATION: same on every page. Move aria-current="page" to the
+       link for the page you are on. Pages in /modules use ../ to reach index.html. -->
+  <header>
+    <p class="site-name"><a href="../index.html">Research Paper Toolbox</a></p>
+    <nav aria-label="Course">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="module-template.html">Topic</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="module-template.html">References</a></li>
+        <li><a href="module-template.html">Style</a></li>
+        <li><a href="module-template.html">Layout</a></li>
+        <li><a href="module-template.html">Modality</a></li>
+        <li><a href="module-template.html">Professionalization</a></li>
+        <li><a href="module-template.html" aria-current="page">Module Template</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Delete this notice when you build a real module. -->
+    <div class="notice">
+      <p><strong>This module is coming soon.</strong> In the meantime, try the <a href="research.html">Research</a> or <a href="data.html">Data</a> module. This page is also the template for building new modules: it shows every element the modules use.</p>
+    </div>
+
+    <!-- MODULE TITLE: module number and short name in the label, full title in the h1.
+         Use only one h1 per page. -->
+    <p class="module-label">Module #: Short Name</p>
+    <h1>Full Module Title</h1>
+
+    <p>Intro paragraph saying who the lesson is for and what it covers.</p>
+
+    <!-- IN-MODULE NAVIGATION: one link per h2 section. Each href must match
+         the id on that section. -->
+    <nav class="page-contents" id="contents" aria-labelledby="contents-heading">
+      <h2 id="contents-heading">On this page</h2>
+      <ol>
+        <li><a href="#first-section">First Section</a></li>
+        <li><a href="#second-section">Second Section</a></li>
+        <li><a href="#wrap-up">Wrap-Up</a></li>
+      </ol>
+    </nav>
+
+    <!-- SECTION: each main topic is a section with an id and an h2.
+         Subtopics use h3. Sidebar headings use h4. Don't skip levels. -->
+    <section id="first-section">
+      <h2>First Section</h2>
+
+      <h3>A Subtopic</h3>
+      <!-- INLINE ELEMENTS:
+           dfn    = key term (shows bold)
+           strong = button or menu command, like File > Export
+           var    = data variable or column name (shows in Courier)
+           cite   = title of a book, article or resource
+           em     = stressed word
+           a      = link; the link text should say where it goes -->
+      <p>A paragraph with a <dfn>key term</dfn>, a menu command such as <strong>File &gt; Export</strong>, a variable name like <var>perc_usefulness</var>, a book title like <cite>English for Engineers</cite>, a word that is <em>not</em> optional, and a link to <a href="https://scholar.google.com">Google Scholar</a>.</p>
+
+      <!-- BULLET LIST: for items in no particular order. -->
+      <ul>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>
+
+      <!-- NUMBERED LIST: for steps the reader follows in order. -->
+      <ol>
+        <li>First step</li>
+        <li>Second step</li>
+      </ol>
+
+      <!-- TERM LIST: for a bold item followed by an explanation. -->
+      <dl>
+        <dt>Item name</dt>
+        <dd>Explanation of the item.</dd>
+        <dt>Another item</dt>
+        <dd>Explanation of the item.</dd>
+      </dl>
+
+      <!-- FORMULA: a key rule or formula set apart from the text. -->
+      <p class="formula"><strong>Step A + Step B &lt; Time left</strong></p>
+
+      <!-- BACK TO TOP: put one at the end of every section except the last. -->
+      <p class="back-to-top"><a href="#contents">Back to top</a></p>
+    </section>
+
+    <section id="second-section">
+      <h2>Second Section</h2>
+
+      <h3>Another Subtopic</h3>
+      <p>Paragraph text.</p>
+
+      <!-- FIGURE: for each screenshot. alt says what the image shows;
+           the caption explains it. Number figures if the text refers to them. -->
+      <figure>
+        <img src="../images/research4_image1.jpg" alt="Example screenshot of a library search result">
+        <figcaption>Figure 1. Caption explaining the screenshot.</figcaption>
+      </figure>
+
+      <!-- SIDEBAR WITH A TITLE: use an h4 for the title. -->
+      <aside>
+        <h4>Sidebar Title</h4>
+        <p>A tip or side note the reader can skip.</p>
+      </aside>
+
+      <!-- SIDEBAR WITHOUT A TITLE: add an aria-label so screen readers can name it. -->
+      <aside aria-label="Tip">
+        <p>A short tip with no title.</p>
+      </aside>
+
+      <p class="back-to-top"><a href="#contents">Back to top</a></p>
+    </section>
+
+    <section id="wrap-up">
+      <h2>Wrap-Up</h2>
+      <p>Closing paragraph pointing the reader to the quiz or the next module.</p>
+    </section>
+
+    <!-- PREVIOUS / NEXT: links to the modules before and after this one. -->
+    <nav class="module-pager" aria-label="Previous and next module">
+      <a href="../index.html">&larr; Previous: Module Name</a>
+      <a href="../index.html">Next: Module Name &rarr;</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Research Paper Toolbox &middot; COM 421, Fall 2026</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Research Paper Toolbox styles
+   One stylesheet for every page. */
+
+/* ----- Page basics ----- */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222222;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+h1, h2 {
+  color: #990000;
+  line-height: 1.2;
+}
+
+h2 {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 4px;
+  margin-top: 40px;
+}
+
+a {
+  color: #990000;
+}
+
+/* ----- Site header and top navigation ----- */
+header {
+  background-color: #990000;
+  padding: 10px 20px;
+}
+
+.site-name {
+  margin: 0 0 8px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 12px 4px 0;
+}
+
+header a:hover,
+header a:focus {
+  text-decoration: underline;
+}
+
+/* the page you are on */
+header a[aria-current="page"] {
+  border-bottom: 3px solid #ffffff;
+}
+
+/* ----- Module label above the h1 ----- */
+.module-label {
+  margin: 30px 0 0;
+  color: #555555;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.module-label + h1 {
+  margin-top: 4px;
+}
+
+/* ----- "On this page" menu inside a module ----- */
+.page-contents {
+  background-color: #f5f5f5;
+  border-left: 4px solid #990000;
+  padding: 10px 20px;
+}
+
+.page-contents h2 {
+  margin-top: 0;
+  border: none;
+  font-size: 1.1em;
+}
+
+.back-to-top {
+  font-size: 0.9em;
+}
+
+/* ----- Sidebars ----- */
+aside {
+  background-color: #fdf3e7;
+  border: 1px solid #e0c9a6;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+aside h4 {
+  margin: 10px 0 0;
+}
+
+/* ----- Figures (screenshots) ----- */
+figure {
+  margin: 20px 0;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555555;
+  font-style: italic;
+}
+
+/* ----- Inline text ----- */
+dfn {
+  font-style: normal;
+  font-weight: bold;
+}
+
+var {
+  font-family: "Courier New", monospace;
+  font-style: normal;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formula {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ----- Previous / next module links ----- */
+.module-pager {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----- Notice on the template page ----- */
+.notice {
+  border: 2px dashed #990000;
+  padding: 10px 20px;
+}
+
+/* ----- Footer ----- */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555555;
+  padding: 20px;
+  border-top: 1px solid #cccccc;
+}
